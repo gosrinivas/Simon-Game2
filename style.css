@@ -27,13 +27,13 @@ body{
     background-color: rgba(255, 0, 0, 0.719);
 }
 .flash{
-    background-color: white;
+    background-color: blue;
 }
 h3{
     font-weight: 600;
 }
 .userflash{
-    background-color: greenyellow;
+    background-color: white;
 }
 h4{
     
@@ -45,4 +45,29 @@ h4{
 
 .game{
     margin-top: 60px;
+}
+
+.startbtn{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight:500px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(122, 122, 252);
+    color: white;
+    
+}
+
+.restart{
+    background-color: white;
+    color:black;
+}
+.game{
+    border: 2px solid black;
+    max-width: 510px;
+    margin: auto auto ;
+    position: relative;
+    margin-top: calc();
+   
 }
