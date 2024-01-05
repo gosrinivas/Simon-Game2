@@ -5,13 +5,20 @@ let color=["pink","blue","green","red"];
 let level=0;
 let h3=document.querySelector("h3");
 let highScore=[0];
-document.addEventListener("keypress", function(){
+let startbtn=document.querySelector(".startbtn");
+alert("Play Game and Boost Retentivity\n Rules for the Game \n 1.Click start Button \n 2. A color Flashes \n 3.click on the color \n 4.Again the color gets flashed \n 6.click Level 1 color and level 2 color.\n repeat the process by following the sequence");
+
+startbtn.addEventListener("click", function(){
+
+    
+
+
     if(start==false){
         start=true;
 
         levelUp();
     }
-});
+}); 
 function levelUp(){
     userseq=[];
     level++;
@@ -37,7 +44,7 @@ function btncheck(inx){
         }
     }else{
         h3.innerHTML=`Game Over!! <br> Your Score was:<b>${level-1}<b> 
-        <br> press any key to start`;
+        <br>  Try again`;
 
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(function(){
@@ -105,4 +112,5 @@ function reset(){
      userseq=[];
     start=false;
     level=0;
+    
 }
